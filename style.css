@@ -1,0 +1,173 @@
+:root {
+    --primary-blue: #4A5D7D;
+    --light-blue: #8497B0;
+    --dark-blue: #364357;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    background-color: #9ab2c8; /* Light blue color */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #6c8ba8; /* Darker blue for hover state */
+}
+
+/* Active state for current page */
+nav a.active {
+    background-color: #4b657e; /* Darkest blue for active state */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: var(--white);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#hero {
+    height: 100vh;
+    background-color: var(--primary-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.join-button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 40px 20px;
+    position: absolute;
+    top: 50%; /* Position vertically in the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content perfectly */
+    color: var(--white)
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#index3 ul, #index4 ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+}
+
+.donate, .partnerships {
+    margin-top: 2rem;
+}
+
+.group2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; /* Changed from left to right */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    opacity: 1; /* Makes it subtle */
+}
+
+/* Homepage specific */
+.homepage {
+    background-color: #46517a; /* Dark blue */
+}
+
+/* Who we are page */
+.who-we-are {
+    background-color: #9ab2c8; /* Light blue */
+}
+
+/* What we do page */
+.what-we-do {
+    background-color: #6c8ba8; /* Medium blue */
+}
+
+/* Support us page */
+.support-us {
+    background-color: #4b657e; /* Darker blue */
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
